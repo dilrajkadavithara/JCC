@@ -1,0 +1,12 @@
+# JCC/frontend/public/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow specific paths (example)
+# Disallow: /admin/
+# Disallow: /private/
+
+Sitemap: %PUBLIC_URL%/sitemap.xml
+
+# Crawl-delay: 10 # Only for old crawlers, not needed for Googlebot

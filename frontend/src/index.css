@@ -1,0 +1,32 @@
+/* JCC/frontend/src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Radial Gradient for SuccessPage */
+.radial-gradient-custom {
+  background: radial-gradient(circle at center, rgba(79, 70, 229, 0.25) 0%, transparent 50%, transparent 100%); /* primary-blue with opacity */
+}
+
+/* Subtle Pattern Background for SuccessPage - Base64 encoded SVG */
+.bg-pattern-subtle {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zm0-30V0H4v4H0v2h4v4h2V6H4V4h-4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 60px; /* Adjust size of the pattern */
+  background-repeat: repeat;
+  opacity: 0.2; /* Adjust opacity for subtlety */
+}
+
+/* Global smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* You can add your own global styles here */
+/* For example: */
+/* html, body {
+  @apply h-full;
+}
+#root {
+  @apply flex flex-col min-h-screen;
+} */
