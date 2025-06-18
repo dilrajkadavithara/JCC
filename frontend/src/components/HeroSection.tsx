@@ -27,14 +27,14 @@ const heroSlides = [
     image: '/images/hero-slide-2.webp',
     alt: 'Expert car interior cleaning and restoration',
     heading: 'Beyond Clean: Your Car, Reimagined.',
-    subheading: 'At Jose Car Care, we transform vehicles into statements. Experience a level of shine and detail that truly sets your car apart on Kerala\'s roads.',
+    subheading: 'At Jos Car Care, we transform vehicles into statements. Experience a level of shine and detail that truly sets your car apart on Kerala\'s roads.',
   },
   {
     id: 3,
     image: '/images/hero-slide-3.webp',
     alt: 'Convenient mobile car wash and polishing services',
     heading: 'Your Schedule, Your Location. Our Expertise.',
-    subheading: 'Experience premium, personalized car detailing where you are most comfortable. Jose Car Care brings the spa treatment for your vehicle directly to you.',
+    subheading: 'Experience premium, personalized car detailing where you are most comfortable. Jos Car Care brings the spa treatment for your vehicle directly to you.',
   },
   {
     id: 4,
@@ -56,7 +56,7 @@ const heroSlides = [
 const mobileHeroContent = {
   image: '/images/hero-mobile-bg.webp',
   alt: 'Mobile car detailing service in Ernakulam',
-  heading: 'Jose Car Care: Detail Delivered.',
+  heading: 'Jos Car Care: Detail Delivered.',
   subheading: 'Protecting your vehicle, preserving its value, right at your doorstep in Ernakulam.',
 };
 

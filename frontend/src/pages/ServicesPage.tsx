@@ -19,7 +19,9 @@ const ServicesPage: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  const API_SERVICES_URL = 'http://127.0.0.1:8000/api/services/';
+  // UPDATED: Use environment variable for API base URL
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://127.0.0.1:8000'; // Fallback for local dev
+  const API_SERVICES_URL = `${API_BASE_URL}/api/services/`; // Construct full URL
 
   useEffect(() => {
     const fetchServices = async () => {
@@ -44,21 +46,18 @@ const ServicesPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Jose Car Care - Our Comprehensive Car Painting & Detailing Services</title> {/* Enhanced title */}
-        <meta name="description" content="Explore Jose Car Care's full range of professional car services: from meticulous car painting, detailing, polishing, and ceramic coatings to undercoating and PPF. Available across Ernakulam, Udayamperoor, Kerala." /> {/* Enhanced description */}
-        <meta name="keywords" content="car painting, car detailing, car wash, polishing, ceramic coating, graphene coating, nano diamond coating, borophene coating, PPF, paint protection film, undercoating, accessories, paint customisation, interior cleaning, exterior wash, vehicle restoration, Ernakulam, Udayamperoor, Kerala, Jose Car Care" /> {/* Enhanced keywords */}
-        {/* OpenGraph Tags */}
+        <title>Jose Car Care - Our Comprehensive Car Painting & Detailing Services</title>
+        <meta name="description" content="Explore Jose Car Care's full range of professional car services: from meticulous car painting, detailing, polishing, and ceramic coatings to undercoating and PPF. Available across Ernakulam, Udayamperoor, Kerala." />
+        <meta name="keywords" content="car painting, car detailing, car wash, polishing, ceramic coating, graphene coating, nano diamond coating, borophene coating, PPF, paint protection film, undercoating, accessories, paint customisation, interior cleaning, exterior wash, vehicle restoration, Ernakulam, Udayamperoor, Kerala, Jose Car Care" />
         <meta property="og:title" content="Jose Car Care - Our Comprehensive Car Painting & Detailing Services" />
         <meta property="og:description" content="Explore Jose Car Care's full range of professional car services: from meticulous car painting, detailing, polishing, and ceramic coatings to undercoating and PPF. Available across Ernakulam, Udayamperoor, Kerala." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://josecarcare.com/services" /> {/* IMPORTANT: Update this to your actual production domain */}
-        <meta property="og:image" content="https://josecarcare.com/logo.png" /> {/* IMPORTANT: Update this to your actual production logo URL */}
+        <meta property="og:url" content="https://josecarcare.com/services" />
+        <meta property="og:image" content="https://josecarcare.com/logo.png" />
       </Helmet>
 
-      {/* Section with optimized vertical padding for less blank space */}
       <section id="services-section" className="py-16 md:py-20 bg-dark-background text-white">
         <div className="container mx-auto px-4">
-          {/* Reduced mb- for heading */}
           <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center text-text-light font-poppins drop-shadow-md">
             Our Comprehensive Detailing Services
           </h1>
@@ -91,8 +90,6 @@ const ServicesPage: React.FC = () => {
               ))}
             </div>
           )}
-
-          {/* Removed: Call to Action button is no longer needed here */}
         </div>
       </section>
     </>

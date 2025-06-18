@@ -14,4 +14,5 @@ urlpatterns = [
 # Serve media files during development
 # IMPORTANT: This is for development only and should be handled by NGINX in production.
 if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) # NEW: Serving STATIC_URL
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

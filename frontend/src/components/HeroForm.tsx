@@ -2,27 +2,24 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; // NEW: Import useNavigate hook
-
-// Removed: import SuccessMessage from './SuccessMessage';
-// SuccessMessage is now rendered by SuccessPage via its own route
+import { useNavigate } from 'react-router-dom';
 
 const HeroForm: React.FC = () => {
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
-  const [submissionStatus, setSubmissionStatus] = useState<'idle' | 'error' | 'loading'>('idle'); // Removed 'success' from status
+  const [submissionStatus, setSubmissionStatus] = useState<'idle' | 'error' | 'loading'>('idle');
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  const navigate = useNavigate(); // NEW: Initialize useNavigate hook
+  // UPDATED: Use environment variable for API base URL
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://127.0.0.1:8000'; // Fallback for local dev
+  const API_LEADS_URL = `${API_BASE_URL}/api/leads/`; // Construct full URL
 
-  const API_LEADS_URL = 'http://127.0.0.1:8000/api/leads/';
-
-  // No longer need resetForm here, as navigation handles "reset" by going to new page
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmissionStatus('loading');
-    setErrorMessage(null); // Clear previous errors
+    setErrorMessage(null);
 
     try {
       const response = await axios.post(API_LEADS_URL, {
@@ -31,13 +28,11 @@ const HeroForm: React.FC = () => {
       });
 
       console.log('Lead submitted successfully:', response.data);
-      setSubmissionStatus('idle'); // Reset status after successful submission, before navigation
-      setName(''); // Clear form fields immediately
+      setSubmissionStatus('idle');
+      setName('');
       setPhoneNumber('');
 
-      // NEW: Redirect to the success page upon successful submission
-      navigate('/success'); 
-
+      navigate('/success');
     } catch (err) {
       setSubmissionStatus('error');
       if (axios.isAxiosError(err) && err.response) {
@@ -59,9 +54,7 @@ const HeroForm: React.FC = () => {
   };
 
   return (
-    // The container still provides animation and width constraints
     <div className="w-full max-w-sm mx-auto animate-fade-in-up">
-      {/* The form itself is always rendered here */}
       <div className="bg-white p-8 rounded-lg shadow-xl text-dark-panel w-full">
         <h3 className="text-2xl font-bold mb-6 font-poppins text-center">Get a Call</h3>
         <form onSubmit={handleSubmit} className="space-y-4">

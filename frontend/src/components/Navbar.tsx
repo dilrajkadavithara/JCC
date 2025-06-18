@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
         {/* Logo / Site Title */}
         <div className="w-full md:w-auto flex justify-center md:justify-start order-1 md:order-none">
           <Link to="#home-section" className="text-white text-3xl md:text-4xl font-poppins font-extrabold hover:text-primary-blue transition duration-200" aria-label="Jose Car Care - Go to Home"> {/* Added aria-label */}
-            Jose Car Care
+            Jos Car Care
           </Link>
         </div>
 

@@ -60,7 +60,7 @@ function App() {
 
       {/* UPDATED: text-muted for footer text consistency */}
       <footer className="py-4 text-center text-text-muted bg-dark-panel shadow-inner">
-        &copy; {new Date().getFullYear()} Jose Car Care. All rights reserved.
+        &copy; {new Date().getFullYear()} Jos Car Care. All rights reserved.
       </footer>
     </div>
   );
