@@ -23,14 +23,53 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Jose Car Care - Home</title>
-        <meta name="description" content="Welcome to Jose Car Care, your trusted local car detailing service in Ernakulam, Kerala. We offer premium car care delivered to your doorstep." />
-        <meta name="keywords" content="car detailing, car wash, home service, mobile car wash, Ernakulam, Kerala, India, car cleaning, Jose Car Care" />
-        <meta property="og:title" content="Jose Car Care - Home" />
-        <meta property="og:description" content="Welcome to Jose Car Care, your trusted local car detailing service in Ernakulam, Kerala. We offer premium car care delivered to your doorstep." />
+        <title>Jose Car Care - Premium Mobile Car Detailing in Ernakulam, Kerala</title> {/* Enhanced title */}
+        <meta name="description" content="Experience unparalleled car painting, detailing, and protection services from Jose Car Care. We offer convenient doorstep pickup & drop-off across Ernakulam, Udayamperoor, and all of Kerala." /> {/* Enhanced description */}
+        <meta name="keywords" content="car painting, car detailing, mobile car wash, home service, vehicle protection, paint protection film, ceramic coating, Ernakulam, Udayamperoor, Kerala, India, Jose Car Care" /> {/* Enhanced keywords */}
+        {/* OpenGraph Tags */}
+        <meta property="og:title" content="Jose Car Care - Premium Mobile Car Detailing" />
+        <meta property="og:description" content="Experience unparalleled car painting, detailing, and protection services from Jose Car Care. We offer convenient doorstep pickup & drop-off across Ernakulam, Udayamperoor, and all of Kerala." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://localhost:3000/" />
-        <meta property="og:image" content="http://localhost:3000/logo.png" />
+        <meta property="og:url" content="https://josecarcare.com/" /> {/* IMPORTANT: Update this to your actual production domain */}
+        <meta property="og:image" content="https://josecarcare.com/logo.png" /> {/* IMPORTANT: Update this to your actual production logo URL */}
+        {/* NEW: LocalBusiness Schema Markup (JSON-LD) */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Jose Car Care",
+              "image": "https://josecarcare.com/logo.png", // Update with actual logo URL
+              "url": "https://josecarcare.com/", // Update with actual domain
+              "telephone": "+916238804932",
+              "email": "mailto:info@josecarcare.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Kandanad P O, Udayamperoor",
+                "addressLocality": "Ernakulam",
+                "addressRegion": "Kerala",
+                "postalCode": "682305",
+                "addressCountry": "IN"
+              },
+              "alternateName": "Jos Car Care", // Include the alternate name
+              "openingHours": [
+                "Mo-Sa 09:00-18:00"
+              ],
+              "description": "Premium mobile car detailing, painting, and protection services with pick-up & drop-off across Kerala.",
+              "sameAs": [
+                "https://www.facebook.com/josecarcare",
+                "https://www.instagram.com/josecarcare"
+                // Add other social media links here
+              ],
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "9.8955", // Placeholder: Find actual latitude/longitude for Udayamperoor/Kandanad
+                "longitude": "76.3681" // Placeholder
+              },
+              "hasMap": "https://www.google.com/maps/place/Udayamperoor,+Kerala+682307" // Placeholder, link to a general map of the area
+            }
+          `}
+        </script>
       </Helmet>
 
       {/* Hero Section */}

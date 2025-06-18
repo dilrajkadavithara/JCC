@@ -44,14 +44,15 @@ const ServicesPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Jose Car Care - Our Services</title>
-        <meta name="description" content="Explore the range of professional car detailing services offered by Jose Car Care, including interior cleaning, exterior washing, waxing, and more in Ernakulam, Kerala. View our comprehensive list of services." />
-        <meta name="keywords" content="car detailing services, car wash services, interior cleaning, exterior wash, waxing, polishing, Ernakulam, Kerala, Jose Car Care" />
-        <meta property="og:title" content="Jose Car Care - Our Services" />
-        <meta property="og:description" content="Explore the range of professional car detailing services offered by Jose Car Care, including interior cleaning, exterior washing, waxing, and more in Ernakulam, Kerala. View our comprehensive list of services." />
+        <title>Jose Car Care - Our Comprehensive Car Painting & Detailing Services</title> {/* Enhanced title */}
+        <meta name="description" content="Explore Jose Car Care's full range of professional car services: from meticulous car painting, detailing, polishing, and ceramic coatings to undercoating and PPF. Available across Ernakulam, Udayamperoor, Kerala." /> {/* Enhanced description */}
+        <meta name="keywords" content="car painting, car detailing, car wash, polishing, ceramic coating, graphene coating, nano diamond coating, borophene coating, PPF, paint protection film, undercoating, accessories, paint customisation, interior cleaning, exterior wash, vehicle restoration, Ernakulam, Udayamperoor, Kerala, Jose Car Care" /> {/* Enhanced keywords */}
+        {/* OpenGraph Tags */}
+        <meta property="og:title" content="Jose Car Care - Our Comprehensive Car Painting & Detailing Services" />
+        <meta property="og:description" content="Explore Jose Car Care's full range of professional car services: from meticulous car painting, detailing, polishing, and ceramic coatings to undercoating and PPF. Available across Ernakulam, Udayamperoor, Kerala." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://localhost:3000/services" />
-        <meta property="og:image" content="http://localhost:3000/images/about-us-hero.webp" />
+        <meta property="og:url" content="https://josecarcare.com/services" /> {/* IMPORTANT: Update this to your actual production domain */}
+        <meta property="og:image" content="https://josecarcare.com/logo.png" /> {/* IMPORTANT: Update this to your actual production logo URL */}
       </Helmet>
 
       {/* Section with optimized vertical padding for less blank space */}

@@ -13,15 +13,16 @@ import { Helmet } from 'react-helmet-async';
 const AboutPage: React.FC = () => {
   return (
     <>
-      <Helmet>
-        <title>Jose Car Care - Why Choose Us?</title>
-        <meta name="description" content="Discover why Jose Car Care is the leading mobile car detailing service in Kerala. Learn about our 25 years of expertise, thousands of satisfied customers, and convenient pick-up/drop-off services." />
-        <meta name="keywords" content="why Jose Car Care, about us, mission, values, car detailing Kerala, mobile service, 25 years experience, pick up drop" />
-        <meta property="og:title" content="Jose Car Care - Why Choose Us?" />
-        <meta property="og:description" content="Discover why Jose Car Care is the leading mobile car detailing service in Kerala. Learn about our 25 years of expertise, thousands of satisfied customers, and convenient pick-up/drop-off services." />
+       <Helmet>
+        <title>About Jose Car Care - 25 Years of Mobile Detailing Expertise in Kerala</title> {/* Enhanced title */}
+        <meta name="description" content="Learn about Jose Car Care's 25-year journey in premium mobile car detailing. Discover our commitment to vehicle protection, customer satisfaction, and convenient pick-up/drop-off service across Ernakulam, Udayamperoor, and Kerala." /> {/* Enhanced description */}
+        <meta name="keywords" content="about us, Jose Car Care story, mission, values, car detailing expertise, mobile car wash Kerala, 25 years experience, vehicle protection, Ernakulam, Udayamperoor, Kerala" /> {/* Enhanced keywords */}
+        {/* OpenGraph Tags */}
+        <meta property="og:title" content="About Jose Car Care - Mobile Detailing Expertise" />
+        <meta property="og:description" content="Learn about Jose Car Care's 25-year journey in premium mobile car detailing. Discover our commitment to vehicle protection, customer satisfaction, and convenient pick-up/drop-off service across Ernakulam, Udayamperoor, and Kerala." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://localhost:3000/about" />
-        <meta property="og:image" content="http://localhost:3000/images/about-us-hero.webp" />
+        <meta property="og:url" content="https://josecarcare.com/about" /> {/* IMPORTANT: Update this to your actual production domain */}
+        <meta property="og:image" content="https://josecarcare.com/images/about-us-hero.webp" /> {/* IMPORTANT: Update this to your actual production logo/image URL */}
       </Helmet>
 
       {/* Updated vertical padding for less blank space between sections */}

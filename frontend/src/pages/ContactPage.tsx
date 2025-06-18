@@ -3,6 +3,18 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
+<Helmet>
+        <title>Contact Jose Car Care - Mobile Detailing & Car Painting in Ernakulam, Kerala</title> {/* Enhanced title */}
+        <meta name="description" content="Get in touch with Jose Car Care for professional mobile car detailing, painting, and protection services in Ernakulam, Udayamperoor, and across Kerala. Find our addresses, phone, email, and operating hours." /> {/* Enhanced description */}
+        <meta name="keywords" content="contact Jose Car Care, phone number, email, address, operating hours, mobile car detailing, car painting, vehicle protection, Ernakulam, Udayamperoor, Kerala, India" /> {/* Enhanced keywords */}
+        {/* OpenGraph Tags */}
+        <meta property="og:title" content="Contact Jose Car Care - Mobile Detailing & Car Painting" />
+        <meta property="og:description" content="Get in touch with Jose Car Care for professional mobile car detailing, painting, and protection services in Ernakulam, Udayamperoor, and across Kerala. Find our addresses, phone, email, and operating hours." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://josecarcare.com/contact" /> {/* IMPORTANT: Update this to your actual production domain */}
+        <meta property="og:image" content="https://josecarcare.com/logo.png" /> {/* IMPORTANT: Update this to your actual production logo URL */}
+      </Helmet>
+
 // SVG Icons (Simplified for direct use in component)
 const PhoneIcon: React.FC = () => (
   <svg className="w-8 h-8 md:w-10 md:h-10 text-accent-yellow mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
