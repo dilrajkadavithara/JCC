@@ -50,13 +50,13 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'josecarcare_backend.urls'
@@ -164,7 +164,14 @@ REST_FRAMEWORK = {
 # CORS Headers settings
 # Allow requests from your React development server
 # In production, this will be your frontend domain
-CORS_ALLOWED_ORIGINS = env.list('CORS_ALLOWED_ORIGINS', default=["http://localhost:3000", "http://127.0.0.1:3000"])
+CORS_ALLOWED_ORIGINS = env.list('CORS_ALLOWED_ORIGINS', default=[
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://159.65.155.90", # <--- Add this line for your server's public IP
+    # If you have a domain name (e.g., yoursite.com) later, add it here too:
+    # "http://yourdomain.com",
+    # "https://yourdomain.com",
+])
 
 CORS_ALLOW_METHODS = [
     'DELETE',
@@ -189,11 +196,4 @@ CORS_ALLOW_HEADERS = [
 
 CORS_ALLOW_CREDENTIALS = True
 
-# Security settings for production (reminders)
-# CSRF_COOKIE_SECURE = True
-# SESSION_COOKIE_SECURE = True
-# SECURE_SSL_REDIRECT = True
-# SECURE_HSTS_SECONDS = 31536000
-# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-# SECURE_HSTS_PRELOAD = True
-# X_FRAME_OPTIONS = 'DENY'
+CSRF_COOKIE_HTTPONLY = False
