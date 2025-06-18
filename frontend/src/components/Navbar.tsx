@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
 
         {/* Logo / Site Title */}
         <div className="w-full md:w-auto flex justify-center md:justify-start order-1 md:order-none">
-          <Link to="#home-section" className="text-white text-3xl md:text-4xl font-poppins font-extrabold hover:text-primary-blue transition duration-200" aria-label="Jose Car Care - Go to Home"> {/* Added aria-label */}
+          <Link to="#home-section" className="text-white text-3xl md:text-4xl font-poppins font-extrabold hover:text-primary-blue transition duration-200" aria-label="Jos Car Care - Go to Home"> {/* Added aria-label */}
             Jos Car Care
           </Link>
         </div>
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
 
         {/* Phone Number */}
         <div className="w-full md:w-auto text-center order-3 md:order-none flex-grow md:flex-grow-0 flex justify-center items-center mt-4 md:mt-0">
-          <a href={`tel:${phoneNumber.replace(/\s/g, '')}`} className="text-white text-xl md:text-2xl font-semibold hover:text-primary-blue transition duration-200 whitespace-nowrap" aria-label={`Call Jose Car Care: ${phoneNumber}`}> {/* Added aria-label */}
+          <a href={`tel:${phoneNumber.replace(/\s/g, '')}`} className="text-white text-xl md:text-2xl font-semibold hover:text-primary-blue transition duration-200 whitespace-nowrap" aria-label={`Call Jos Car Care: ${phoneNumber}`}> {/* Added aria-label */}
             {phoneNumber}
           </a>
         </div>

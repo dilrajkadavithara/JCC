@@ -23,26 +23,26 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Jose Car Care - Premium Mobile Car Detailing in Ernakulam, Kerala</title> {/* Enhanced title */}
-        <meta name="description" content="Experience unparalleled car painting, detailing, and protection services from Jose Car Care. We offer convenient doorstep pickup & drop-off across Ernakulam, Udayamperoor, and all of Kerala." /> {/* Enhanced description */}
-        <meta name="keywords" content="car painting, car detailing, mobile car wash, home service, vehicle protection, paint protection film, ceramic coating, Ernakulam, Udayamperoor, Kerala, India, Jose Car Care" /> {/* Enhanced keywords */}
+        <title>Jos Car Care - Premium Mobile Car Detailing in Ernakulam, Kerala</title> {/* Enhanced title */}
+        <meta name="description" content="Experience unparalleled car painting, detailing, and protection services from Jos Car Care. We offer convenient doorstep pickup & drop-off across Ernakulam, Udayamperoor, and all of Kerala." /> {/* Enhanced description */}
+        <meta name="keywords" content="car painting, car detailing, mobile car wash, home service, vehicle protection, paint protection film, ceramic coating, Ernakulam, Udayamperoor, Kerala, India, Jos Car Care" /> {/* Enhanced keywords */}
         {/* OpenGraph Tags */}
-        <meta property="og:title" content="Jose Car Care - Premium Mobile Car Detailing" />
-        <meta property="og:description" content="Experience unparalleled car painting, detailing, and protection services from Jose Car Care. We offer convenient doorstep pickup & drop-off across Ernakulam, Udayamperoor, and all of Kerala." />
+        <meta property="og:title" content="Jos Car Care - Premium Mobile Car Detailing" />
+        <meta property="og:description" content="Experience unparalleled car painting, detailing, and protection services from Jos Car Care. We offer convenient doorstep pickup & drop-off across Ernakulam, Udayamperoor, and all of Kerala." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://josecarcare.com/" /> {/* IMPORTANT: Update this to your actual production domain */}
-        <meta property="og:image" content="https://josecarcare.com/logo.png" /> {/* IMPORTANT: Update this to your actual production logo URL */}
+        <meta property="og:url" content="https://joscarcare.com/" /> {/* IMPORTANT: Update this to your actual production domain */}
+        <meta property="og:image" content="https://joscarcare.com/logo.png" /> {/* IMPORTANT: Update this to your actual production logo URL */}
         {/* NEW: LocalBusiness Schema Markup (JSON-LD) */}
         <script type="application/ld+json">
           {`
             {
               "@context": "http://schema.org",
               "@type": "LocalBusiness",
-              "name": "Jose Car Care",
-              "image": "https://josecarcare.com/logo.png", // Update with actual logo URL
-              "url": "https://josecarcare.com/", // Update with actual domain
+              "name": "Jos Car Care",
+              "image": "https://joscarcare.com/logo.png", // Update with actual logo URL
+              "url": "https://joscarcare.com/", // Update with actual domain
               "telephone": "+916238804932",
-              "email": "mailto:info@josecarcare.com",
+              "email": "mailto:info@joscarcare.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Kandanad P O, Udayamperoor",
@@ -57,8 +57,8 @@ const HomePage: React.FC = () => {
               ],
               "description": "Premium mobile car detailing, painting, and protection services with pick-up & drop-off across Kerala.",
               "sameAs": [
-                "https://www.facebook.com/josecarcare",
-                "https://www.instagram.com/josecarcare"
+                "https://www.facebook.com/joscarcare",
+                "https://www.instagram.com/joscarcare"
                 // Add other social media links here
               ],
               "geo": {

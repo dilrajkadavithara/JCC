@@ -46,14 +46,14 @@ const ServicesPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Jose Car Care - Our Comprehensive Car Painting & Detailing Services</title>
-        <meta name="description" content="Explore Jose Car Care's full range of professional car services: from meticulous car painting, detailing, polishing, and ceramic coatings to undercoating and PPF. Available across Ernakulam, Udayamperoor, Kerala." />
-        <meta name="keywords" content="car painting, car detailing, car wash, polishing, ceramic coating, graphene coating, nano diamond coating, borophene coating, PPF, paint protection film, undercoating, accessories, paint customisation, interior cleaning, exterior wash, vehicle restoration, Ernakulam, Udayamperoor, Kerala, Jose Car Care" />
-        <meta property="og:title" content="Jose Car Care - Our Comprehensive Car Painting & Detailing Services" />
-        <meta property="og:description" content="Explore Jose Car Care's full range of professional car services: from meticulous car painting, detailing, polishing, and ceramic coatings to undercoating and PPF. Available across Ernakulam, Udayamperoor, Kerala." />
+        <title>Jos Car Care - Our Comprehensive Car Painting & Detailing Services</title>
+        <meta name="description" content="Explore Jos Car Care's full range of professional car services: from meticulous car painting, detailing, polishing, and ceramic coatings to undercoating and PPF. Available across Ernakulam, Udayamperoor, Kerala." />
+        <meta name="keywords" content="car painting, car detailing, car wash, polishing, ceramic coating, graphene coating, nano diamond coating, borophene coating, PPF, paint protection film, undercoating, accessories, paint customisation, interior cleaning, exterior wash, vehicle restoration, Ernakulam, Udayamperoor, Kerala, Jos Car Care" />
+        <meta property="og:title" content="Jos Car Care - Our Comprehensive Car Painting & Detailing Services" />
+        <meta property="og:description" content="Explore Jos Car Care's full range of professional car services: from meticulous car painting, detailing, polishing, and ceramic coatings to undercoating and PPF. Available across Ernakulam, Udayamperoor, Kerala." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://josecarcare.com/services" />
-        <meta property="og:image" content="https://josecarcare.com/logo.png" />
+        <meta property="og:url" content="https://joscarcare.com/services" />
+        <meta property="og:image" content="https://joscarcare.com/logo.png" />
       </Helmet>
 
       <section id="services-section" className="py-16 md:py-20 bg-dark-background text-white">

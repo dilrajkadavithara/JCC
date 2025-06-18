@@ -4,15 +4,15 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 <Helmet>
-        <title>Contact Jose Car Care - Mobile Detailing & Car Painting in Ernakulam, Kerala</title> {/* Enhanced title */}
-        <meta name="description" content="Get in touch with Jose Car Care for professional mobile car detailing, painting, and protection services in Ernakulam, Udayamperoor, and across Kerala. Find our addresses, phone, email, and operating hours." /> {/* Enhanced description */}
-        <meta name="keywords" content="contact Jose Car Care, phone number, email, address, operating hours, mobile car detailing, car painting, vehicle protection, Ernakulam, Udayamperoor, Kerala, India" /> {/* Enhanced keywords */}
+        <title>Contact Jos Car Care - Mobile Detailing & Car Painting in Ernakulam, Kerala</title> {/* Enhanced title */}
+        <meta name="description" content="Get in touch with Jos Car Care for professional mobile car detailing, painting, and protection services in Ernakulam, Udayamperoor, and across Kerala. Find our addresses, phone, email, and operating hours." /> {/* Enhanced description */}
+        <meta name="keywords" content="contact Jos Car Care, phone number, email, address, operating hours, mobile car detailing, car painting, vehicle protection, Ernakulam, Udayamperoor, Kerala, India" /> {/* Enhanced keywords */}
         {/* OpenGraph Tags */}
-        <meta property="og:title" content="Contact Jose Car Care - Mobile Detailing & Car Painting" />
-        <meta property="og:description" content="Get in touch with Jose Car Care for professional mobile car detailing, painting, and protection services in Ernakulam, Udayamperoor, and across Kerala. Find our addresses, phone, email, and operating hours." />
+        <meta property="og:title" content="Contact Jos Car Care - Mobile Detailing & Car Painting" />
+        <meta property="og:description" content="Get in touch with Jos Car Care for professional mobile car detailing, painting, and protection services in Ernakulam, Udayamperoor, and across Kerala. Find our addresses, phone, email, and operating hours." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://josecarcare.com/contact" /> {/* IMPORTANT: Update this to your actual production domain */}
-        <meta property="og:image" content="https://josecarcare.com/logo.png" /> {/* IMPORTANT: Update this to your actual production logo URL */}
+        <meta property="og:url" content="https://joscarcare.com/contact" /> {/* IMPORTANT: Update this to your actual production domain */}
+        <meta property="og:image" content="https://joscarcare.com/logo.png" /> {/* IMPORTANT: Update this to your actual production logo URL */}
       </Helmet>
 
 // SVG Icons (Simplified for direct use in component)
@@ -60,11 +60,12 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Jose Car Care - Contact Us</title>
-        <meta name="description" content="Get in touch with Jose Car Care for bookings, inquiries, and mobile detailing services in Ernakulam, Kerala. Find our addresses, phone, email, and operating hours." />
-        <meta name="keywords" content="contact, booking, inquiry, phone, email, location, Ernakulam, Kerala, Jose Car Care, mobile detailing, addresses, operating hours" />
-        <meta property="og:title" content="Jose Car Care - Contact Us" />
-        <meta property="og:description" content="Get in touch with Jose Car Care for bookings, inquiries, and mobile detailing services in Ernakulam, Kerala. Find our addresses, phone, email, and operating hours." />
+        <title>Jos Car Care - Contact Us</title>
+        <meta name="description" content="Get in touch with Jos
+         Car Care for bookings, inquiries, and mobile detailing services in Ernakulam, Kerala. Find our addresses, phone, email, and operating hours." />
+        <meta name="keywords" content="contact, booking, inquiry, phone, email, location, Ernakulam, Kerala, Jos Car Care, mobile detailing, addresses, operating hours" />
+        <meta property="og:title" content="Jos Car Care - Contact Us" />
+        <meta property="og:description" content="Get in touch with Jos Car Care for bookings, inquiries, and mobile detailing services in Ernakulam, Kerala. Find our addresses, phone, email, and operating hours." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://localhost:3000/contact" />
         <meta property="og:image" content="http://localhost:3000/logo.png" />
@@ -91,7 +92,7 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div className="flex items-center text-text-light text-xl md:text-2xl">
                     <MailIcon />
-                    <a href="mailto:info@josecarcare.com" className="hover:underline transition-colors duration-200">info@josecarcare.com</a>
+                    <a href="mailto:info@joscarcare.com" className="hover:underline transition-colors duration-200">info@joscarcare.com</a>
                   </div>
                 </div>
               </div>
@@ -122,14 +123,14 @@ const ContactPage: React.FC = () => {
                   <div className="flex items-start text-text-light text-lg">
                     <LocationIcon />
                     <p className="flex-grow">
-                      <span className="font-semibold">Main Office:</span> Jose Car Care, Kandanad P O, Udayamperoor, Ernakulam-682305
+                      <span className="font-semibold">Main Office:</span> Jos Car Care, Kandanad P O, Udayamperoor, Ernakulam-682305
                     </p>
                   </div>
                   {/* Studio & Service Point Address */}
                   <div className="flex items-start text-text-light text-lg">
                     <LocationIcon />
                     <p className="flex-grow">
-                      <span className="font-semibold">Studio & Service Point:</span> Jose Car Care, Opp Chrupushpam Studio, Udayamperoor, Ernakulam-682307
+                      <span className="font-semibold">Studio & Service Point:</span> Jos Car Care, Opp Chrupushpam Studio, Udayamperoor, Ernakulam-682307
                     </p>
                   </div>
                 </div>
@@ -145,12 +146,12 @@ const ContactPage: React.FC = () => {
                 <h2 className="text-3xl font-bold mb-6 text-primary-blue font-poppins text-center">Connect With Us</h2>
                 <div className="flex justify-center space-x-8">
                   {/* Facebook Icon with specific brand color background */}
-                  <a href="https://facebook.com/josecarcare" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+                  <a href="https://facebook.com/joscarcare" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
                     className="flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#3b5998] hover:scale-110 transition-transform duration-200 shadow-md">
                     <FacebookIcon />
                   </a>
                   {/* Instagram Icon with gradient background */}
-                  <a href="https://instagram.com/josecarcare" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                  <a href="https://instagram.com/joscarcare" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
                     className="flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-500 hover:scale-110 transition-transform duration-200 shadow-md">
                     <InstagramIcon />
                   </a>

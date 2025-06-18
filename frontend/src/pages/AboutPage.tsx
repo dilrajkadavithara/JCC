@@ -14,15 +14,15 @@ const AboutPage: React.FC = () => {
   return (
     <>
        <Helmet>
-        <title>About Jose Car Care - 25 Years of Mobile Detailing Expertise in Kerala</title> {/* Enhanced title */}
-        <meta name="description" content="Learn about Jose Car Care's 25-year journey in premium mobile car detailing. Discover our commitment to vehicle protection, customer satisfaction, and convenient pick-up/drop-off service across Ernakulam, Udayamperoor, and Kerala." /> {/* Enhanced description */}
-        <meta name="keywords" content="about us, Jose Car Care story, mission, values, car detailing expertise, mobile car wash Kerala, 25 years experience, vehicle protection, Ernakulam, Udayamperoor, Kerala" /> {/* Enhanced keywords */}
+        <title>About Jos Car Care - 25 Years of Mobile Detailing Expertise in Kerala</title> {/* Enhanced title */}
+        <meta name="description" content="Learn about Jos Car Care's 25-year journey in premium mobile car detailing. Discover our commitment to vehicle protection, customer satisfaction, and convenient pick-up/drop-off service across Ernakulam, Udayamperoor, and Kerala." /> {/* Enhanced description */}
+        <meta name="keywords" content="about us, Jos Car Care story, mission, values, car detailing expertise, mobile car wash Kerala, 25 years experience, vehicle protection, Ernakulam, Udayamperoor, Kerala" /> {/* Enhanced keywords */}
         {/* OpenGraph Tags */}
-        <meta property="og:title" content="About Jose Car Care - Mobile Detailing Expertise" />
-        <meta property="og:description" content="Learn about Jose Car Care's 25-year journey in premium mobile car detailing. Discover our commitment to vehicle protection, customer satisfaction, and convenient pick-up/drop-off service across Ernakulam, Udayamperoor, and Kerala." />
+        <meta property="og:title" content="About Jos Car Care - Mobile Detailing Expertise" />
+        <meta property="og:description" content="Learn about Jos Car Care's 25-year journey in premium mobile car detailing. Discover our commitment to vehicle protection, customer satisfaction, and convenient pick-up/drop-off service across Ernakulam, Udayamperoor, and Kerala." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://josecarcare.com/about" /> {/* IMPORTANT: Update this to your actual production domain */}
-        <meta property="og:image" content="https://josecarcare.com/images/about-us-hero.webp" /> {/* IMPORTANT: Update this to your actual production logo/image URL */}
+        <meta property="og:url" content="https://joscarcare.com/about" /> {/* IMPORTANT: Update this to your actual production domain */}
+        <meta property="og:image" content="https://joscarcare.com/images/about-us-hero.webp" /> {/* IMPORTANT: Update this to your actual production logo/image URL */}
       </Helmet>
 
       {/* Updated vertical padding for less blank space between sections */}
@@ -32,10 +32,10 @@ const AboutPage: React.FC = () => {
             {/* Left Half: Text Content */}
             <div className="md:w-1/2 mb-12 md:mb-0 animate-fade-in-up flex flex-col justify-center">
               <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-text-light font-poppins drop-shadow-md">
-                Why Jose Car Care? Our Unrivaled Dedication & Reach.
+                Why Jos Car Care? Our Unrivaled Dedication & Reach.
               </h1>
               <p className="text-lg md:text-xl leading-relaxed mb-6 text-text-muted">
-                For 25 years, Jose Car Care has been the trusted name in premium vehicle detailing across Kerala. What began in 2000 as a home-grown passion has blossomed into a service dedicated to protecting your automotive investment and making every drive a joy. We believe in meticulous craftsmanship, unrivaled convenience, and a truly personalized approach, serving thousands of satisfied customers who trust us with their cherished vehicles.
+                For 25 years, Jos Car Care has been the trusted name in premium vehicle detailing across Kerala. What began in 2000 as a home-grown passion has blossomed into a service dedicated to protecting your automotive investment and making every drive a joy. We believe in meticulous craftsmanship, unrivaled convenience, and a truly personalized approach, serving thousands of satisfied customers who trust us with their cherished vehicles.
               </p>
 
               {/* Key Differentiators - Refined for mobile alignment */}
@@ -87,8 +87,8 @@ const AboutPage: React.FC = () => {
             <div className="md:w-1/2 relative flex justify-center items-center p-4 md:p-0">
               <img
                 src="/images/about-us-hero.webp"
-                alt="Professional car detailing in progress by Jose Car Care expert"
-                className="w-full h-auto rounded-lg shadow-2xl transform transition-transform duration-500 hover:scale-105"
+                alt="Professional car detailing in progress by Jos Car Care expert"
+                className="w-full h-auto rounded-lg shadow-2 xl transform transition-transform duration-500 hover:scale-105"
               />
               {/* Overlaid Statistics/Badges */}
               <div className="absolute inset-0 flex flex-col justify-between p-8">

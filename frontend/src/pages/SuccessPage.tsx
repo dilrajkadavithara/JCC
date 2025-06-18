@@ -21,11 +21,11 @@ const SuccessPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Jose Car Care - Inquiry Success!</title>
-        <meta name="description" content="Thank you for your inquiry to Jose Car Care. Your request has been successfully received." />
-        <meta name="keywords" content="success, inquiry received, thank you, Jose Car Care" />
-        <meta property="og:title" content="Jose Car Care - Inquiry Success!" />
-        <meta property="og:description" content="Thank you for your inquiry to Jose Car Care. Your request has been successfully received." />
+        <title>Jos Car Care - Inquiry Success!</title>
+        <meta name="description" content="Thank you for your inquiry to Jos Car Care. Your request has been successfully received." />
+        <meta name="keywords" content="success, inquiry received, thank you, Jos Car Care" />
+        <meta property="og:title" content="Jos Car Care - Inquiry Success!" />
+        <meta property="og:description" content="Thank you for your inquiry to Jos Car Care. Your request has been successfully received." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http://localhost:3000/success" />
         <meta property="og:image" content="http://localhost:3000/logo.png" />
@@ -53,7 +53,7 @@ const SuccessPage: React.FC = () => {
             <br /> Your Car's Journey to Shine Begins.
           </h3>
           <p className="text-lg md:text-xl leading-relaxed mb-4 text-text-muted max-w-prose"> {/* Reduced mb- from mb-6 to mb-4, added max-w-prose */}
-            Thank you for reaching out to Jose Car Care! We've successfully received your request for a call. Our dedicated team is already reviewing your details, and you'll hear from us shortly to discuss your personalized car care needs.
+            Thank you for reaching out to Jos Car Care! We've successfully received your request for a call. Our dedicated team is already reviewing your details, and you'll hear from us shortly to discuss your personalized car care needs.
           </p>
           <p className="text-base md:text-lg italic text-gray-500 mb-6"> {/* Reduced mb- from mb-8 to mb-6 */}
             Get ready to experience unparalleled convenience and meticulous detailing that truly preserves your investment.
