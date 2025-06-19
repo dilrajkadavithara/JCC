@@ -19,15 +19,23 @@ const ServicesPage: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  // UPDATED: Use environment variable for API base URL
-  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://127.0.0.1:8000'; // Fallback for local dev
-  const API_SERVICES_URL = `${API_BASE_URL}/api/services/`; // Construct full URL
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://127.0.0.1:8000';
+  const API_SERVICES_URL = `${API_BASE_URL}/api/services/`;
 
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await axios.get<Service[]>(API_SERVICES_URL);
-        setServices(response.data);
+        const response = await axios.get(API_SERVICES_URL);
+
+        console.log("API Response:", response.data); // <-- DEBUG LINE
+
+        if (Array.isArray(response.data)) {
+          setServices(response.data);
+        } else {
+          console.error('API did not return an array:', response.data);
+          setServices([]);
+          setError('Unexpected response format from API.');
+        }
       } catch (err) {
         if (axios.isAxiosError(err)) {
           setError(err.message);
@@ -62,7 +70,6 @@ const ServicesPage: React.FC = () => {
             Our Comprehensive Detailing Services
           </h1>
 
-          {/* Loading, Error, or Services Display */}
           {loading && (
             <div className="flex justify-center items-center h-48">
               <p className="text-xl text-text-muted">Loading services...</p>
@@ -83,7 +90,7 @@ const ServicesPage: React.FC = () => {
             </div>
           )}
 
-          {!loading && !error && services.length > 0 && (
+          {!loading && !error && Array.isArray(services) && services.length > 0 && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service) => (
                 <ServiceCard key={service.id} service={service} />
