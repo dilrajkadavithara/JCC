@@ -1,0 +1,30 @@
+name: Deploy to Staging
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to Staging Server
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.8.1
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy via SSH
+        run: |
+          ssh -o StrictHostKeyChecking=no dilrajkr@159.65.155.90 << 'EOF'
+            cd /opt/JCC
+            git pull origin main
+            # Optional: Build frontend if needed
+            # cd frontend && npm install && npm run build
+            # Restart backend service if using gunicorn/systemd
+          EOF
