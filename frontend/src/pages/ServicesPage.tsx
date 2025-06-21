@@ -20,7 +20,7 @@ const ServicesPage: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://127.0.0.1:8000';
-  const API_SERVICES_URL = `${API_BASE_URL}/api/services/`;
+  const API_SERVICES_URL = `${API_BASE_URL}/services/`;
 
   useEffect(() => {
     const fetchServices = async () => {

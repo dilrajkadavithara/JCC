@@ -7,12 +7,11 @@ import { useNavigate } from 'react-router-dom';
 const HeroForm: React.FC = () => {
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
-  const [submissionStatus, setSubmissionStatus] = useState<'idle' | 'error' | 'loading'>('idle');
+  const [submissionStatus, setSubmissionStatus] = useState<'idle' | 'error' | 'loading'>('idle');       
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  // UPDATED: Use environment variable for API base URL
-  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://127.0.0.1:8000'; // Fallback for local dev
-  const API_LEADS_URL = `${API_BASE_URL}/api/leads/`; // Construct full URL
+  // Hardcoded production API URL for leads submission
+  const API_LEADS_URL = 'https://joscarcare.com/api/leads/';
 
   const navigate = useNavigate();
 
@@ -78,7 +77,7 @@ const HeroForm: React.FC = () => {
 
           {/* Phone Number Input */}
           <div>
-            <label htmlFor="phoneNumber" className="block text-gray-700 text-sm font-semibold mb-2">
+            <label htmlFor="phoneNumber" className="block text-gray-700 text-sm font-semibold mb-2">    
               Phone Number
             </label>
             <input
