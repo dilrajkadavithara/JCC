@@ -14,12 +14,33 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.7.0
-        with:
-          ssh-private-key: ${{ secrets.JCC_STAGING_KEY }}
-
-      - name: Deploy to Staging Server
+      - name: Set up SSH
         run: |
-          echo "Attempting SSH connection to staging server..."
-          ssh -v -o StrictHostKeyChecking=no ${{ secrets.JCC_STAGING_USER }}@${{ secrets.JCC_STAGING_HOST }} "echo ✅ SSH successful! Ready for deployment."
+          mkdir -p ~/.ssh
+          echo "${{ secrets.STAGING_SSH_PRIVATE_KEY }}" > ~/.ssh/github-deploy
+          chmod 600 ~/.ssh/github-deploy
+          ssh-keyscan -H 159.65.155.90 >> ~/.ssh/known_hosts
+
+      - name: Deploy to Staging via SSH
+        run: |
+          ssh -i ~/.ssh/github-deploy -o StrictHostKeyChecking=no dilrajkr@159.65.155.90 << 'EOF'
+            set -e  # Stop on error
+            cd /opt/JCC
+            git pull origin main
+
+            # Optional: Build frontend if needed
+            # cd frontend
+            # npm install
+            # npm run build
+            # cd ..
+
+            # Optional: Migrate database
+            # source venv/bin/activate
+            # python manage.py migrate
+
+            # Optional: Restart backend service
+            # sudo systemctl restart gunicorn
+
+            # Optional: Restart Nginx
+            # sudo systemctl reload nginx
+          EOF
