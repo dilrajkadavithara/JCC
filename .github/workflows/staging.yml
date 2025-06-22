@@ -19,12 +19,7 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.JCC_STAGING_KEY }}
 
-      - name: Deploy via SSH
+      - name: Deploy to Staging Server
         run: |
-          ssh -o StrictHostKeyChecking=no dilrajkr@159.65.155.90 << 'EOF'
-            cd /opt/JCC
-            git pull origin main
-            # Optional: Build frontend if needed
-            # cd frontend && npm install && npm run build
-            # Restart backend service if using gunicorn/systemd
-          EOF
+          echo "Attempting SSH connection to staging server..."
+          ssh -v -o StrictHostKeyChecking=no ${{ secrets.JCC_STAGING_USER }}@${{ secrets.JCC_STAGING_HOST }} "echo ✅ SSH successful! Ready for deployment."
